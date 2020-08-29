@@ -1,0 +1,71 @@
+ .body {
+     background-color: black;
+ }
+
+ .displayG {
+    color: white;
+    background-color: #02030d;
+    border: solid 2px #02030d;
+    border-radius: 10px 10px 10px 10px;
+    text-align: center;
+    position: relative;
+    right: 20px; 
+ }
+ 
+ .ShopTitleDisplay {
+    color: white;
+    background-color: #55f67e;
+    border: solid 2px #55f67e;
+    border-radius: 10px 10px 10px 10px;
+    text-align: center;
+    position: relative;
+    right: 20px;
+ }
+ 
+ .ShopDisplay {
+     background-color: brown;
+ }
+ 
+ .fblue {
+     background-color: #1b8cb1;
+     height: 250px;
+ }
+ 
+ .Gbutton {
+     color: blue;
+     background-color: white;
+     border: solid 5px black;
+     border-radius: 8px 8px 8px;
+     height: 145px;
+     width: 215px;
+     position: relative;
+     top: 25px;
+     right: 50px;
+     float: right;
+     z-index: 1;
+ }
+
+ .ShopPriceDisplay {
+     color: white;
+     text-align: left;
+     font-family: "Lucida Console", Courier, monospace;
+     font-size: 12px;
+     font-weight: bold;
+     text-decoration: underline;
+ }
+ 
+ .ShopButtonDisplay {
+     color: white;
+     background-color: #02030d;
+     border: solid 5px black;
+     position: relative;
+     width: 150px;
+     height: 50px;
+ }
+ 
+ .UpDisplay {
+     color: white;
+     font-family: "Lucida Console", Courier, monospace;
+     font-size: 15px;
+     text-decoration: underline;
+ }
