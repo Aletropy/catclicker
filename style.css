@@ -54,6 +54,19 @@
      text-decoration: underline;
  }
  
+ .ShopPriceDisplayR{
+     color: white;
+     text-align: left;
+     font-family: "Lucida Console", Courier, monospace;
+     font-size: 12px;
+     font-weight: bold;
+     text-decoration: underline;
+     float: right;
+     position: relative;
+     bottom: 50px;
+     right: 50px;
+ }
+ 
  .ShopButtonDisplay {
      color: white;
      background-color: #02030d;
@@ -61,6 +74,16 @@
      position: relative;
      width: 150px;
      height: 50px;
+ }
+ 
+ .ShopButtonDisplayR {
+     color: white;
+     background-color: #02030d;
+     border: solid 5px black;
+     position: relative;
+     width: 150px;
+     height: 50px;
+     left: 120px;
  }
  
  .UpDisplay {
