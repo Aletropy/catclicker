@@ -8,9 +8,11 @@
     //Multiplicador de clicks e gatos por segundo
     var multClick = 1;
     var bps = 0;
+    var ghps= 0;
     //Valores de Precos
     var MinePrice = 1;
     var MiPrice= 1;
+    var GhPrice= 1;
 
 //Funcoes
         function clickG() {
@@ -53,7 +55,18 @@
                 alert("Voce nao tem gatos o suficiente");
             }
         }
-    
+        
+        //Compra de Gatos hipinoticos
+        function GHbuy() {
+            if (cats >= 150 * GhPrice) {
+                cats -= 150 *GhPrice;
+                ghps += 1;
+                GhPrice += 2;
+            } else {
+                alert("Voce nao tem gatos o suificiente");
+        }
+        
+        }
 //Intervalos
 
         //Quando a pagina carregar
@@ -68,17 +81,29 @@
         setInterval(function() {
             document.getElementById("MbuyDisplay").innerHTML = "Melhorar Coletor de Gatos<br>" + "Preco: " + 100 * MinePrice + " Gatos";
             document.getElementById("MibuyDisplay").innerHTML = "Comprar 1 Minerador de Gatos<br>" + "Preco: " + 50 * MiPrice + " Gatos";
+            document.getElementById("GhbuyDisplay").innerHTML = "Comprar 1 Gato Hipnotico<br>" + "Preco: " + 150 * GhPrice + " Gatos"; 
             
         }, 1);
         
         //Gatos por segundo
         setInterval(function() {
             cats += bps * 2;
+            cats += ghps * 8;
         }, 1000); //1000ms = 1 segundo
         
         setInterval(function() {
+            //Mineradores de Gatos (display)
             if (bps >= 1) {
                 document.getElementById("MiDisplay").innerHTML = "Mineradores de Gatos: " + bps + " = " + bps * 2 + "s";
+            } else {
+                document.getElementById("MiDisplay").innerHTML = "????";
+            }
+            
+            //Gatos Hipnoticos (display)
+            if (ghps >=1) {
+                document.getElementById("GhDisplay").innerHTML = "Gatos Hipnoticos: " + ghps + " = " + ghps * 8 + "s";
+            } else {
+                document.getElementById("GhDisplay").innerHTML = "????";
             }
             
                 document.getElementById("MineDisplay").innerHTML = "Coletor de Gatos Nivel: " + multClick;
@@ -106,7 +131,9 @@
                 multClick: multClick,
                 bps: bps,
                 MinePrice: MinePrice,
-                MiPrice: MiPrice
+                MiPrice: MiPrice,
+                GhPrice: GhPrice,
+                ghps: ghps
         };
             localStorage.setItem("gameSave", JSON.stringify(gameSave));
     }
@@ -122,4 +149,6 @@
             if (typeof savedGame.bps !== "undefined") bps = savedGame.bps;
             if (typeof savedGame.MinePrice !== "undefined") MinePrice = savedGame.MinePrice;
             if (typeof savedGame.MiPrice !== "undefined") MiPrice = savedGame.MiPrice;
+            if (typeof savedGame.GhPrice !== "undefined") GhPrice = savedGame.GhPrice;
+            if (typeof savedGame.ghps !== "undefined") ghps = savedGame.ghps;
         }
