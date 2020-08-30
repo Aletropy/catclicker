@@ -34,7 +34,7 @@
         if (cats >= 100 * MinePrice) {
             cats -= 100 * MinePrice;
             multClick += 1;
-            MinePrice += 2;
+            MinePrice += MinePrice * 2;
           //Caso nao tenha gatos suficientes
         } else {
             alert("Voce nao tem gatos o suficiente");
