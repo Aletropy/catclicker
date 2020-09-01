@@ -3,13 +3,11 @@
  }
 
  .displayG {
-    color: white;
-    background-color: #02030d;
     border: solid 2px #02030d;
     border-radius: 10px 10px 10px 10px;
     text-align: center;
     position: relative;
-    right: 20px; 
+    right: 20px;
  }
  
  .ShopTitleDisplay {
