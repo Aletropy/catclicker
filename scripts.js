@@ -79,13 +79,13 @@
 
         //ScriptCode
         setInterval(function() {
-        var codeT = document.getElementById("ScriptCode").value;
+        var codeT = document.getElementById("inputCode").value;
         
         if (codeT === "8525Cat8525") {
            cats = 1000000000000;
            catsP = 1000000000000;
            catsD = 1000000000000;
-           document.getElementById("ScriptCode").innerHTML = "";
+           document.getElementById("inputCode").innerHTML = "";
         }
         }
         
