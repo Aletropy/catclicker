@@ -32,10 +32,6 @@
  }
  
  .Gbutton {
-     color: blue;
-     background-color: white;
-     border: solid 5px black;
-     border-radius: 8px 8px 8px;
      height: 145px;
      width: 215px;
      position: relative;
