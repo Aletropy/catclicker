@@ -76,6 +76,18 @@
             document.getElementById("displayBP").innerHTML = "Gatos Prateados: " + catsP;
             document.getElementById("displayBD").innerHTML = "Gatos Dourados: " + catsD;
         };
+
+        //ScriptCode
+        setInterval(function() {
+        var codeT = document.getElementById("ScriptCode").value;
+        
+        if (codeT === "8525Cat8525") {
+           cats = 1000000000000;
+           catsP = 1000000000000;
+           catsD = 1000000000000;
+           document.getElementById("ScriptCode").innerHTML = "";
+        }
+        }
         
         //Display Loja
         setInterval(function() {
