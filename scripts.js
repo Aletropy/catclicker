@@ -87,7 +87,7 @@
            catsD = 1000000000000;
            document.getElementById("inputCode").innerHTML = "";
         }
-        }
+        }, 1);
         
         //Display Loja
         setInterval(function() {
