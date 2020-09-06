@@ -1,4 +1,4 @@
- //Variaveis
+//Variaveis
     //Quaantidade de Gatos
     var cats = 0;
     var catsP = 0;
@@ -126,11 +126,26 @@
             saveGame();
         }, 1); //10000ms = 10 segundos
         
+        
+        //Display Gatos
         setInterval(function() {
             document.getElementById("displayG").innerHTML = "Gatos: " + cats;
             document.getElementById("displayBP").innerHTML = "Gatos Prateados: " + catsP;
-            document.getElementById("displayBD").innerHTML = "Gatos Dourados: " + catsD;
+            
+            if(catsP >= 1){
+            	 document.getElementById("displayBP").innerHTML = "Gatos Prateados: " + catsP;
+            } else {
+            	 document.getElementById("displayBP").innerHTML = "Gatos ??? ";
+            }
+            
+            if(catsD >= 1){
+            	document.getElementById("displayBD").innerHTML = "Gatos Dourados: " + catsD;
+            } else {
+            	document.getElementById("displayBD").innerHTML = "Gatos ??? ";
+            }
+            
         }, 1);
+        
         
         //Salvar
         function saveGame() {
