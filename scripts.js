@@ -46,8 +46,8 @@
         
         //Compra de Mineradores
         function Mibuy() {
-            if (cats >= 50 * MiPrice) {
-                cats -= 50 * MiPrice;
+            if (cats >= 20 * MiPrice) {
+                cats -= 20 * MiPrice;
                 bps += 1;
                 MiPrice += 1;
               //Caso nao tenha gatos o suficiente    
@@ -92,7 +92,7 @@
         //Display Loja
         setInterval(function() {
             document.getElementById("MbuyDisplay").innerHTML = "Melhorar Coletor de Gatos<br>" + "Preco: " + 100 * MinePrice + " Gatos";
-            document.getElementById("MibuyDisplay").innerHTML = "Comprar 1 Minerador de Gatos<br>" + "Preco: " + 50 * MiPrice + " Gatos";
+            document.getElementById("MibuyDisplay").innerHTML = "Comprar 1 Minerador de Gatos<br>" + "Preco: " + 20 * MiPrice + " Gatos";
             document.getElementById("GhbuyDisplay").innerHTML = "Comprar 1 Gato Hipnotico<br>" + "Preco: " + 150 * GhPrice + " Gatos"; 
             
         }, 1);
