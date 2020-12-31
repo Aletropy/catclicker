@@ -5,7 +5,7 @@
 <body style="background-color: blue; color: white;">
 <h1 id="dialogos" style="background-color: lightgreen; border: 4px solid black; border-radius: 20px 20px 20px 20px; text-align: center;">Desculpe mas o site esta fora do ar<br>estamos em progresso de atualização do jogo<br>Por favor tenha paciencia</h1>
 <input style="background-color: green; border: 4px solid black; border-radius: 20px 20px 20px 20px; outline: none;" placeholder="Codigo de acesso" type="password" maxlength="10" id="InputA"> <button style="padding: 8px 8px;" onclick="Cod()">Enviar</button> <h3 id="CaixaA" style="color:red ;">Aguradando Codigo</h3>
-<h4 id="dialogos" style="background-color: lightgreen; border: 4px solid black; border-radius: 20px 20px 20px 20px; text-align: center;">Caso queira um codigo de acesso administrador deve solicitar ao dono (se voce for um administrador)</h4>
+<h4 id="dialogosb" style="background-color: lightgreen; border: 4px solid black; border-radius: 20px 20px 20px 20px; text-align: center;">Caso queira um codigo de acesso administrador deve solicitar ao dono (se voce for um administrador)</h4>
 
 <script>
 function Cod(){
@@ -13,6 +13,7 @@ var Valor = document.getElementById("InputA").value;
 if (Valor === "7481592630") {
 	document.getElementById("CaixaA").innerHTML = "Sucesso... Redirecionando";
 	document.getElementById("dialogos").innerHTML = "Sucesso... Redirecionando";
+	document.getElementById("dialogosb").innerHTML = "Sucesso... Redirecionando";
 } else {
  document.getElementById("CaixaA").innerHTML = "O codigo " + "(" + Valor + ")" + " não esta correto";
 }
