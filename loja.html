@@ -1,0 +1,49 @@
+<html>
+<head>
+	<title>Loja Gatunesa</title>
+	<link rel="stylesheet" href="Assets/style.css" type="text/css"/>
+	<style>
+	#configsL {
+	position: absolute;
+	margin: auto;
+	top: 0px;
+	left: 0px;
+	background-color: gray;
+	border: 1px solid black;
+	border-radius: 5px;
+	padding: 25px;
+	display: none;
+}
+	</style>
+</head>
+<body>
+
+<nav class="menu">
+	<ul>
+			<li><a href="index.html">Home</a></li>
+			<li><a href="#">Loja</a></li>
+			<li><a href="#">Upgrades</a></li>
+			<li><a onclick="MLojaConfig()">Configurações</a></li>
+			<p id="username">Username</p>
+	</ul>
+</nav>
+
+<h1 id="displayPug">Pugs: 0</h1>
+
+
+<form id="configsL">
+<h3 style="color: red; font-family: 'Arial';">Configurações</h3>
+<input type="radio" name="Itemas" onclick="TrocarTemaLoja('#999')">Tema Padrão<br>
+<input type="radio" name="Itemas" onclick="TrocarTemaLoja('lightgreen')">Tema 1<br>
+<input type="radio" name="Itemas" onclick="TrocarTemaLoja('green')">Tema 2<br>
+<input type="radio" name="Itemas" onclick="TrocarTemaLoja('lightblue')">Tema 3<br>
+<input type="radio" name="Itemas" onclick="TrocarTemaLoja('blue')">Tema 4<br>
+<input type="button" value="Fechar" onclick="SaveConfigLoja()">
+</form>
+
+
+<script src="Scripts/var.js"></script>
+<script src="Scripts/save.js"></script>
+<script src="Scripts/funcLoja.js"></script>
+</body>
+</html>
