@@ -1,0 +1,44 @@
+<!DOCTYPE HTML>
+<html lang="pt-br">
+<head>
+<title>Pug Clicker</title>
+<link type="text/css" href="Assets/style.css" rel="stylesheet">
+</head>
+<body>
+
+<input type="checkbox" id="bt_menu">
+<label for="bt_menu">&#9776;</label>
+
+<nav class="menu">
+	<ul>
+			<li><a href="#">Home</a></li>
+			<li><a href="loja.html">Loja</a></li>
+			<li><a href="#">Upgrades</a></li>
+			<li><a onclick="MConfig()">Configurações</a></li>
+			<p id="username">Username</p>
+	</ul>
+</nav>
+
+<p id="usuarioInputN" style="color: white; display: none;">Nome de usuario:</p><input style="display: none;" maxlength="16" id="usuarioInput" type="text"><input style="display: none;" type="button" value="Enviar" id="usuarioInputB"onclick="EnviarNick()">
+<div id="pugsDir">
+<p class="displayPug" id="displayPug">Pug Filhote: 0</p>
+<input type="button" value="Coletar Pugs" class="pugButton" onclick="pugClick()">
+<br><br>
+</div>
+
+<form id="configs">
+<h3 style="color: red; font-family: 'Arial';">Configurações</h3>
+<input type="radio" name="Itemas" onclick="TrocarTema('linear-gradient(to bottom, #009ec5, #39d7ff, #80e6ff 100%)', 'orange')">Tema Padrão<br>
+<input type="radio" name="Itemas" onclick="TrocarTema('lightgreen', 'green')">Tema 1<br>
+<input type="radio" name="Itemas" onclick="TrocarTema('green', 'lightgreen')">Tema 2<br>
+<input type="radio" name="Itemas" onclick="TrocarTema('lightblue', 'blue')">Tema 3<br>
+<input type="radio" name="Itemas" onclick="TrocarTema('blue', 'lightblue')">Tema 4<br>
+<input type="button" value="Fechar" onclick="SaveConfig()">
+</form>
+
+<script src="Scripts/var.js"></script>
+<script src="Scripts/save.js"></script>
+<script src="Scripts/func.js"></script>
+</body>
+
+</html>
